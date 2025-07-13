@@ -1,22 +1,42 @@
 body {
   font-family: 'Segoe UI', sans-serif;
+  padding: 20px;
   background: #fce4ec;
   color: #4a148c;
-  padding: 20px;
+  margin: 0;
 }
 
 h1 {
-  text-align: center;
   color: #ad1457;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
-h2 {
+#semestres {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 10px;
+  scroll-snap-type: x mandatory;
+}
+
+.bloque-semestre {
+  min-width: 300px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  background-color: #f8bbd0;
+  border-radius: 12px;
+  padding: 10px 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bloque-semestre h2 {
   background: #ce93d8;
   color: white;
   padding: 10px;
   border-radius: 6px;
-  box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
+  margin-top: 0;
 }
 
 ul {
@@ -26,7 +46,7 @@ ul {
 
 li {
   padding: 8px 12px;
-  margin: 6px 0;
+  margin-bottom: 6px;
   background: #f8bbd0;
   border: 1px solid #ec407a;
   border-radius: 8px;
@@ -51,3 +71,4 @@ li.done {
   background: #d1c4e9;
   color: #4a148c;
 }
+
